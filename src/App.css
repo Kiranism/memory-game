@@ -23,6 +23,7 @@ h1 {
 }
 
 .container {
+  max-width: 767px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   grid-auto-rows: 150px;
@@ -71,4 +72,15 @@ h1 {
   place-items: center;
   font-size: 50px;
   border-radius: 4px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* CSS rules for small screen devices */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-auto-rows: 150px;
+    justify-content: center;
+    gap: 20px;
+  }
 }
